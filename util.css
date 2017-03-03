@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#blur-div {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#blur-image {
+    display: block;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    filter: blur(5px);
+    -webkit-filter: blur(20px);
+    -mos-filter: blur(20px);
+    -ms-filter: blur(20px);
+    -o-filter: blur(20px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+#canvas {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100; 
+}
+
+.button {
+    display: block;
+    position: absolute;
+    z-index: 200;
+    width: 100px;
+    height: 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+#resetBtn:hover {
+    background-color: #047;
+}
+
+#showBtn:hover {
+    background-color: #074;
+}
+
+#resetBtn {
+    left: 40%;
+    top: 60%;
+    background-color: #058;
+}
+
+#showBtn {
+    left: 55%;
+    top: 60%;
+    background-color: #085;
+}
+@media screen and (max-width: 800px) {
+    #resetBtn {
+        left: 20%;
+        top: 60%;
+    }
+    #showBtn {
+        left: 55%;
+        top: 60%;
+    }
+}
+ 
